@@ -1,0 +1,27 @@
+{ "app": {
+   
+   "title": "HYUN_FIRST",
+   "version": "1.0.0",
+   "owner": "bitValence",
+   "url": "",
+
+   "description": [
+      "This app was generated using the hello-world template"
+   ],
+
+   "cfs": {
+      "cfe-type": "CFE_APP",
+      "obj-file": "hyun_first",
+      "entry-symbol": "HYUN_FIRST_AppMain",
+      "name": "HYUN_FIRST",
+      "priority": 70,
+      "stack": 32768,
+      "load_addr": 0,
+      "exception-action": 0,
+      "app-framework": "osk",
+      "tables": ["hello_wrld_ini.json"]
+   }
+   
+}}
+
+

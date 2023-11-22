@@ -1,0 +1,17 @@
+{
+   "title": "Hello World initialization file",
+   "description": ["Define runtime configurations"],
+   "config": {
+      
+      "APP_CFE_NAME": "HYUN_FIRST",
+      "APP_PERF_ID":  127,
+          
+      "APP_CMD_PIPE_MAX": 7,
+      "APP_CMD_PIPE_NAME":  "HYUN_FIRST_CMD",
+
+      "HYUN_FIRST_CMD_TOPICID": 0,
+      "BC_SCH_4_SEC_TOPICID": 0,
+      "HYUN_FIRST_HK_TLM_TOPICID": 0
+      
+   }
+}

@@ -1,9 +1,9 @@
 {
-  "time-stamp": "",
+  "time-stamp": "11/22/2023-20:37:55",
   "title": "MQTT Gateway Lib/App",
   "objective": [
     "Introduce the MQTT library and gateway app and use them as examples for using the cFS App Exchange"
   ],
-  "current-slide": 1,
-  "complete": false
+  "current-slide": 5,
+  "complete": true
 }

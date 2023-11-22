@@ -1,0 +1,8 @@
+{
+  "time-stamp": "11/22/2023-21:10:59",
+  "title": "Hello World",
+  "objective": [
+    "Introduce developers to application design, telecommand processing, telemetry message generation, and JSON initialization parameter files."
+  ],
+  "document": "hello-world-tutorial.pdf"
+}

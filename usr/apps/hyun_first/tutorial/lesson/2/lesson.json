@@ -1,0 +1,45 @@
+{
+  "time-stamp": "11/22/2023-21:10:47",
+  "title": "Add Telemetry Data Point",
+  "objective": [
+    "Learn how to modify an Electronic Data Sheet telemetry message payload definition and telemeter the value."
+  ],
+  "current-file": "Undefined",
+  "complete": false,
+  "file": [
+    {
+      "path": "eds",
+      "name": "hyun_first.xml",
+      "exercise": [
+        {
+          "id": "EX1",
+          "instructions": "1. Locate the 'DataTypeSet: Telemetry Payloads' comment block. Add the following entry to StatusTlm_Payload's <EntryList>:\n    Entry name='SetParamCmdVal'\n    type='BASE_TYPES/uint16'\n\nNote the GUI needs to be retarted after building the new lesson cFS target."
+        }
+      ]
+    },
+    {
+      "path": "fsw/src",
+      "name": "hyun_first_app.h",
+      "exercise": [
+        {
+          "id": "EX1",
+          "instructions": "1. Locate the HYUN_FIRST_Class_t definition. In the 'HYUN_FIRST State & Contained Objects' section add:\n    'uint16  SetParamCmdVal;'"
+        }
+      ]
+    },
+    {
+      "path": "fsw/src",
+      "name": "hyun_first_app.c",
+      "exercise": [
+        {
+          "id": "EX1",
+          "instructions": "1. Locate the HYUN_FIRST_SetParamCmd() function added in lesson 1. Before the return line add:\n    'Hyun_first.SetParamCmdVal = CmdPayload->Param;'"
+        },
+        {
+          "id": "EX2",
+          "instructions": "1. Locate the SendHousekeepingTlm() function. After the command counter lines add:\n    'Payload->SetParamCmdVal = Hyun_first.SetParamCmdVal;'"
+        }
+      ]
+    }
+  ]
+}
